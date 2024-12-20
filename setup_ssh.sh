@@ -9,15 +9,6 @@ fi
 echo "Memperbarui daftar paket..."
 sudo apt update
 
-# Menanyakan apakah akan melanjutkan dengan upgrade
-read -p "Apakah Anda ingin melanjutkan dengan upgrade sistem? (y/n): " jawab
-if [[ "$jawab" =~ ^[Yy]$ ]]; then
-  echo "Meng-upgrade sistem..."
-  sudo apt upgrade -y
-else
-  echo "Upgrade dibatalkan, melanjutkan ke langkah berikutnya..."
-fi
-
 echo "Menginstal OpenSSH Server..."
 sudo apt install openssh-server -y
 
