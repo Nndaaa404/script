@@ -40,3 +40,9 @@ echo "Memulai ulang layanan SSH..."
 sudo systemctl restart ssh
 
 echo "Konfigurasi selesai. SSH Server telah diatur dan berjalan."
+
+# Menghapus file setup_ssh.sh setelah semua perintah selesai
+echo "Menghapus file setup_ssh.sh..."
+rm -- "$0"  # Menghapus script yang sedang berjalan
+
+echo "File setup_ssh.sh telah dihapus."
